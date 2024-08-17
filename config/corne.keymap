@@ -31,15 +31,5 @@
                              &none   &none    &kp SPACE    &mo 2     &mo 3  &kp BSPC
             >;
         };
-
-        // 2
-        special_layer {
-            bindings = <
-   &none &kp LS(RIGHT) &kp TILDE &kp LBKT &kp RBKT &kp CARET    &kp UNDER &kp LT   &kp SLASH &kp GT  &kp DEL &none
-   &none &kp LS(LEFT)  &kp GRAVE &kp LPAR &kp RPAR &kp DLLR     &kp EQUAL &kp LBRC &kp RBRC  &kp SQT &kp DQT &none
-   &none &kp LGUI     &kp EXCL  &kp AT   &kp HASH &kp PRCNT    &kp AMPS  &kp BSLH &kp PIPE  &none  &none  &none
-                                 &none   &mo 4    &kp SPACE    &none    &none   &kp BSPC 
-            >;
-        };
     };
 };
