@@ -273,10 +273,11 @@
             >;
         };
 
+        // &trans &none &kp TILDE &kp LBKT &kp RBKT &kp CARET    &kp UNDER &kp LT   &kp SLASH &kp RT  &kp DEL &trans
         // 2
         special_layer {
             bindings = <
-   &trans &none &kp TILDE &kp LBKT &kp RBKT &kp CARET    &kp UNDER &kp LT   &kp SLASH &kp RT  &kp DEL &trans
+   &trans &kp FSLH &kp STAR  &kp PLUS &kp MINUS &kp COMMA    &kp COMMA &kp N7 &kp N8 &kp N9 &kp N0   &trans
    &trans &none &kp GRAVE &kp LPAR &kp RPAR &kp DLLR     &kp EQUAL &kp LBRC &kp RBRC  &kp SQT &kp DQT &trans
    &trans &kp LGUI     &kp EXCL  &kp AT   &kp HASH &kp PRCNT    &kp AMPS  &kp BSLH &kp PIPE  &trans  &trans  &trans
                                  &trans   &mo 4    &kp SPACE    &trans    &trans   &kp BSPC 
