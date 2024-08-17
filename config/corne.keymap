@@ -22,62 +22,33 @@
             >;
         };
 
-
-        // 4
-        fn_layer {
+        // 1
+        number_layer {
             bindings = <
-   &trans &trans &kp C_VOL_DN &kp C_MUTE &kp C_VOL_DN &trans    &trans &kp F9 &kp F10 &kp F11 &kp F12 &trans
-   &trans &trans &kp C_PREV   &kp C_PP   &kp C_NEXT   &trans    &trans &kp F5 &kp F6  &kp F7  &kp F8  &trans
-   &trans &trans &trans       &trans     &trans       &trans    &trans &kp F1 &kp F2  &kp F3  &kp F4  &trans
-                              &trans     &trans       &trans    &trans &trans &kp BSPC 
+   &trans &kp FSLH &kp STAR  &kp PLUS &kp MINUS &kp COMMA    &kp COMMA &kp N7 &kp N8 &kp N9 &kp N0   &trans
+   &trans &bt LALT &bt GRAVE &bt TAB  &bt LCTRL &bt SPACE    &kp EQUAL &kp N4 &kp N5 &kp N6 &kp SEMI &trans
+   &trans &trans   &trans    &trans   &trans    &trans       &trans    &kp N1 &kp N2 &kp N3 &kp DOT  &trans
+                             &trans   &trans    &kp SPACE    &mo 2     &mo 3  &kp BSPC
             >;
         };
 
-        // 5
-        mouse_keys_layer {
+        // 2
+        special_layer {
             bindings = <
-   &trans &trans      &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &trans      &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &bootloader &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-                             &trans &trans &trans    &trans &trans &trans
+   &trans &kp LS(RIGHT) &kp TILDE &kp LBKT &kp RBKT &kp CARET    &kp UNDER &kp LT   &kp SLASH &kp GT  &kp DEL &trans
+   &trans &kp LS(LEFT)  &kp GRAVE &kp LPAR &kp RPAR &kp DLLR     &kp EQUAL &kp LBRC &kp RBRC  &kp SQT &kp DQT &trans
+   &trans &kp LGUI     &kp EXCL  &kp AT   &kp HASH &kp PRCNT    &kp AMPS  &kp BSLH &kp PIPE  &trans  &trans  &trans
+                                 &trans   &mo 4    &kp SPACE    &trans    &trans   &kp BSPC 
             >;
         };
 
-        // 6
-        dwm_layer {
+        // 3
+        arrow_layer {
             bindings = <
-   &trans &trans &kp LA(LS(DOT)) &kp LA(U) &kp LA(M)   &kp LA(T)          &trans         &kp LA(LS(ENTER))    &trans       &kp LA(P)       &kp LA(LS(C))    &trans
-   &trans &trans &trans            &trans             &trans                &kp LA(LS(DOT))        &kp LA(H) &kp LA(J)    &kp LA(K)    &kp LA(L) &kp LA(ENTER)     &trans
-   &trans &trans &trans            &trans             &kp LA(D) &kp LA(I)     &trans         &kp &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N4) &trans
-                                   &trans             &trans                &mo 7                     &trans         &trans       &trans
-            >;
-        };
-
-        // 7
-        dwm_alt_layer {
-            bindings = <
-   &trans &kp LA(LS(Q)) &trans &trans &trans &trans    &trans &trans          &trans          &trans            &trans           &trans
-   &trans &trans    &trans &trans &trans &trans    &trans &trans          &trans          &trans            &trans           &trans
-   &trans &trans    &trans &trans &trans &trans    &trans &kp LA(LS(N1)) &kp LA(LS(N2)) &kp LA(LS(N3)) &kp LA(LS(N4)) &trans
-                           &trans &trans &trans    &trans &trans          &trans
-            >;
-        };
-
-        empty_layer {
-            bindings = <
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-                        &trans &trans &trans    &trans &trans &trans
-            >;
-        };
-
-        empty_layer {
-            bindings = <
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-                        &trans &trans &trans    &trans &trans &trans
+   &trans &trans &trans &kp PG_UP &kp PG_DN &trans    &trans   &kp HOME &kp END  &trans    &trans &trans
+   &trans &trans &trans &trans    &trans    &trans    &kp LEFT &kp DOWN &kp UP   &kp RIGHT &trans &trans
+   &trans &trans &trans &trans    &trans    &trans    &trans   &trans   &trans   &trans    &trans &trans
+                        &trans    &trans    &trans    &trans   &trans   &kp BSPC 
             >;
         };
     };
