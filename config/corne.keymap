@@ -234,34 +234,5 @@
                              &trans &trans &trans    &trans &trans &trans
             >;
         };
-
-        // 6
-        dwm_layer {
-            bindings = <
-   &trans &trans &kp LA(LS(DOT)) &dwm_layout_bstack &dwm_layout_monocle   &dwm_layout_tile          &trans         &kp LA(LS(ENTER))    &trans       &dwm_run       &kp LA(LS(C))    &trans
-   &trans &trans &trans            &trans             &trans                &dwm_focus_nscreen        &dwm_dec_msize &dwm_next    &dwm_prev    &dwm_inc_msize &dwm_swap     &trans
-   &trans &trans &trans            &trans             &dwm_dec_master_count &dwm_inc_master_count     &trans         &kp &dwm_tag_one &dwm_tag_two &dwm_tag_three &dwm_tag_four &trans
-                                   &trans             &trans                &mo 7                     &trans         &trans       &trans
-            >;
-        };
-
-        // 7
-        dwm_alt_layer {
-            bindings = <
-   &trans &kp LA(LS(Q)) &trans &trans &trans &trans    &trans &trans          &trans          &trans            &trans           &trans
-   &trans &trans    &trans &trans &trans &trans    &trans &trans          &trans          &trans            &trans           &trans
-   &trans &trans    &trans &trans &trans &trans    &trans &kp LA(LS(N1)) &kp LA(LS(N2)) &kp LA(LS(N3)) &kp LA(LS(N4)) &trans
-                           &trans &trans &trans    &trans &trans          &trans
-            >;
-        };
-
-        empty_layer {
-            bindings = <
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-                        &trans &trans &trans    &trans &trans &trans
-            >;
-        };
     };
 };
