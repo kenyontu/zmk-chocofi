@@ -276,8 +276,8 @@
         // 2
         special_layer {
             bindings = <
-   &trans &theway_edit &kp TILDE &kp LBKT &kp RBKT &kp CARET    &kp UNDER &kp LT   &kp SLASH &kp RT  &kp DEL &trans
-   &trans &theway_del  &kp GRAVE &kp LPAR &kp RPAR &kp DLLR     &kp EQUAL &kp LBRC &kp RBRC  &kp SQT &kp DQT &trans
+   &trans &none &kp TILDE &kp LBKT &kp RBKT &kp CARET    &kp UNDER &kp LT   &kp SLASH &kp RT  &kp DEL &trans
+   &trans &none &kp GRAVE &kp LPAR &kp RPAR &kp DLLR     &kp EQUAL &kp LBRC &kp RBRC  &kp SQT &kp DQT &trans
    &trans &kp LGUI     &kp EXCL  &kp AT   &kp HASH &kp PRCNT    &kp AMPS  &kp BSLH &kp PIPE  &trans  &trans  &trans
                                  &trans   &mo 4    &kp SPACE    &trans    &trans   &kp BSPC 
             >;
