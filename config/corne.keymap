@@ -9,169 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    macros {
-        dwm_swap: dwm_swap {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp ENTER>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_run: dwm_run {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp P>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_next: dwm_next {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp J>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_prev: dwm_prev {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp K>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_tag_one: dwm_tag_one {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp N1>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_tag_two: dwm_tag_two {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp N2>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_tag_three: dwm_tag_three {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp N3>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_tag_four: dwm_tag_four {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp N4>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_inc_msize: dwm_inc_msize {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp L>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_dec_msize: dwm_dec_msize {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp H>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_layout_tile: dwm_layout_tile {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp T>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_layout_monocle: dwm_layout_monocle {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp M>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_layout_bstack: dwm_layout_bstack {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp U>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_focus_nscreen: dwm_focus_nscreen {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp DOT>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_inc_master_count: dwm_inc_master_count {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp I>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_dec_master_count: dwm_dec_master_count {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                    , <&macro_tap &kp D>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-    };
-
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -232,6 +69,35 @@
    &trans &trans      &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
    &trans &bootloader &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
                              &trans &trans &trans    &trans &trans &trans
+            >;
+        };
+
+        // 6
+        dwm_layer {
+            bindings = <
+   &trans &trans &kp LA(LS(DOT)) &kp LA(U) &kp LA(M)   &kp LA(T)          &trans         &kp LA(LS(ENTER))    &trans       &kp LA(P)       &kp LA(LS(C))    &trans
+   &trans &trans &trans            &trans             &trans                &kp LA(LS(DOT))        &kp LA(H) &kp LA(J)    &kp LA(K)    &kp LA(L) &kp LA(ENTER)     &trans
+   &trans &trans &trans            &trans             &kp LA(D) &kp LA(I)     &trans         &kp &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N4) &trans
+                                   &trans             &trans                &mo 7                     &trans         &trans       &trans
+            >;
+        };
+
+        // 7
+        dwm_alt_layer {
+            bindings = <
+   &trans &kp LA(LS(Q)) &trans &trans &trans &trans    &trans &trans          &trans          &trans            &trans           &trans
+   &trans &trans    &trans &trans &trans &trans    &trans &trans          &trans          &trans            &trans           &trans
+   &trans &trans    &trans &trans &trans &trans    &trans &kp LA(LS(N1)) &kp LA(LS(N2)) &kp LA(LS(N3)) &kp LA(LS(N4)) &trans
+                           &trans &trans &trans    &trans &trans          &trans
+            >;
+        };
+
+        empty_layer {
+            bindings = <
+   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+                        &trans &trans &trans    &trans &trans &trans
             >;
         };
     };
