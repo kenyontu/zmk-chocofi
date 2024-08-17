@@ -21,4 +21,5 @@
                            &lt 5 ESC &mo 1 &mt LCTRL SPACE     &kp LSHFT &mo 2 &kp BSPC
             >;
         };
+    };
 };
