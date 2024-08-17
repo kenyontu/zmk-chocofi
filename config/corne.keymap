@@ -39,16 +39,6 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LALT>
-                    , <&macro_tap &kp ENTER>
-                    , <&macro_release &kp LALT>
-                    ;
-        };
-
-        dwm_run: dwm_run {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
                     , <&macro_tap &kp P>
                     , <&macro_release &kp LALT>
                     ;
