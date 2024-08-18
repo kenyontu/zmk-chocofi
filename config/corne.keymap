@@ -285,6 +285,215 @@
                     , <&macro_release &kp LSHFT>
                     ;
         };
+
+        tmux_new: tmux_new {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_tap &kp C>
+                    ;
+        };
+
+        tmux_next_win: tmux_next_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_tap &kp N>
+                    ;
+        };
+
+        tmux_prev_win: tmux_prev_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_tap &kp P>
+                    ;
+        };
+
+        tmux_split_h: tmux_split_h {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_tap &kp PERCENT>
+                    ;
+        };
+
+        tmux_split_v: tmux_split_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_tap &kp DQT>
+                    ;
+        };
+
+        tmux_pane_up: tmux_pane_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_tap &kp UP>
+                    ;
+        };
+
+        tmux_pane_right: tmux_pane_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_tap &kp RIGHT>
+                    ;
+        };
+        tmux_pane_down: tmux_pane_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_tap &kp DOWN>
+                    ;
+        };
+
+        tmux_pane_left: tmux_pane_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_tap &kp LEFT>
+                    ;
+        };
+
+        tmux_resize_up: tmux_resize_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_tap &kp UP>
+                    , <&macro_release &kp LCTRL>
+                    ;
+        };
+
+        tmux_resize_right: tmux_resize_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_tap &kp RIGHT>
+                    , <&macro_release &kp LCTRL>
+                    ;
+        };
+        tmux_resize_down: tmux_resize_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_tap &kp DOWN>
+                    , <&macro_release &kp LCTRL>
+                    ;
+        };
+
+        tmux_resize_left: tmux_resize_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_tap &kp LEFT>
+                    , <&macro_release &kp LCTRL>
+                    ;
+        };
+
+        tmux_sessionnizer: tmux_sessionnizer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_press &kp LSHFT>
+                    , <&macro_tap &kp F>
+                    , <&macro_release &kp LSHFT>
+                    ;
+        };
+
+        tmux_session_list: tmux_session_list {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_tap &kp S>
+                    ;
+        };
+
+        tmux_select: tmux_select {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp B>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_tap &kp LBKT>
+                    ;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        combo_caps {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            bindings = <&kp CAPS>;
+            layers = <0>;
+        };
+
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&kp TAB>;
+            layers = <0>;
+        };
+
+        combo_enter {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp ENTER>;
+            layers = <0>;
+        };
+
+        combo_bslash {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp BACKSLASH>;
+            layers = <0>;
+        };
+
     };
 
 
@@ -294,89 +503,99 @@
         // 0
         default_layer {
             bindings = <
-   &kp TAB   &kp Q &kp W   &kp E     &kp R &kp T               &kp Y     &kp U &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S   &lt 6 D   &kp F &kp G               &kp H     &kp J &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X   &kp C     &kp V &kp B               &kp N     &kp M &kp COMMA &kp DOT &kp FSLH &kp ESC
-                           &lt 5 ESC &mo 1 &mt LCTRL SPACE     &kp LSHFT &mo 2 &kp BSPC
+   &none &kp Q &kp W &kp E     &kp R &lt 8 T             &kp Y     &kp U &kp I     &kp O   &kp P    &none
+   &none &kp A &kp S &lt 6 D   &kp F &kp G               &kp H     &kp J &kp K     &kp L   &kp SEMI &none
+   &none &kp Z &kp X &kp C     &kp V &kp B               &kp N     &kp M &kp COMMA &kp DOT &kp FSLH &none
+                     &lt 5 ESC &mo 1 &mt LCTRL SPACE     &kp LSHFT &mo 2 &kp BSPC
             >;
         };
 
         // 1
         number_layer {
             bindings = <
-   &trans &kp FSLH &kp STAR  &kp PLUS &kp MINUS &kp COMMA    &kp COMMA &kp N7 &kp N8 &kp N9 &kp N0   &trans
-   &trans &kp LALT &kp GRAVE &kp TAB  &kp LCTRL &kp SPACE    &kp EQUAL &kp N4 &kp N5 &kp N6 &kp SEMI &trans
-   &trans &trans   &trans    &trans   &trans    &trans       &trans    &kp N1 &kp N2 &kp N3 &kp DOT  &trans
-                             &trans   &trans    &kp SPACE    &mo 2     &mo 3  &kp BSPC
+   &none &kp FSLH &kp STAR  &kp PLUS &kp MINUS &kp COMMA     &kp COMMA &kp N7 &kp N8   &kp N9 &kp N0   &none
+   &none &kp LALT &kp GRAVE &kp TAB  &kp LCTRL &kp SPACE     &kp EQUAL &kp N4 &kp N5   &kp N6 &kp SEMI &none
+   &none &none    &none     &none    &none     &none         &none     &kp N1 &kp N2   &kp N3 &kp DOT  &none
+                            &none    &none     &kp SPACE     &mo 2     &mo 3  &kp BSPC
             >;
         };
 
         // 2
         special_layer {
             bindings = <
-   &trans &theway_edit &kp TILDE &kp LBKT &kp RBKT &kp CARET    &kp UNDER &kp LT   &kp SLASH &kp GT  &kp DEL &trans
-   &trans &theway_del  &kp GRAVE &kp LPAR &kp RPAR &kp DLLR     &kp EQUAL &kp LBRC &kp RBRC  &kp SQT &kp DQT &trans
-   &trans &kp LGUI     &kp EXCL  &kp AT   &kp HASH &kp PRCNT    &kp AMPS  &kp BSLH &kp PIPE  &trans  &trans  &trans
-                                 &trans   &mo 4    &kp SPACE    &trans    &trans   &kp BSPC 
+   &none &theway_edit &kp TILDE &kp LBKT &kp RBKT &kp CARET     &kp UNDER &kp LT   &kp SLASH &kp GT  &kp DEL &none
+   &none &theway_del  &kp GRAVE &kp LPAR &kp RPAR &kp DLLR      &kp EQUAL &kp LBRC &kp RBRC  &kp SQT &kp DQT &none
+   &none &kp LGUI     &kp EXCL  &kp AT   &kp HASH &kp PRCNT     &kp AMPS  &kp BSLH &kp PIPE  &none   &none   &none
+                                &none    &mo 4    &kp SPACE     &none     &none    &kp BSPC 
             >;
         };
 
         // 3
         arrow_layer {
             bindings = <
-   &trans &trans &trans &kp PG_UP &kp PG_DN &trans    &trans   &kp HOME &kp END  &trans    &trans &trans
-   &trans &trans &trans &trans    &trans    &trans    &kp LEFT &kp DOWN &kp UP   &kp RIGHT &trans &trans
-   &trans &trans &trans &trans    &trans    &trans    &trans   &trans   &trans   &trans    &trans &trans
-                        &trans    &trans    &trans    &trans   &trans   &kp BSPC 
+   &none &none &none &kp PG_UP &kp PG_DN &none     &none    &kp HOME &kp END  &none     &none &none
+   &none &none &none &none     &none     &none     &kp LEFT &kp DOWN &kp UP   &kp RIGHT &none &none
+   &none &none &none &none     &none     &none     &none    &none    &none    &none     &none &none
+                     &none     &none     &none     &none    &none    &kp BSPC 
             >;
         };
 
         // 4
         fn_layer {
             bindings = <
-   &trans &trans &kp C_VOL_DN &kp C_MUTE &kp C_VOL_DN &trans    &trans &kp F9 &kp F10 &kp F11 &kp F12 &trans
-   &trans &trans &kp C_PREV   &kp C_PP   &kp C_NEXT   &trans    &trans &kp F5 &kp F6  &kp F7  &kp F8  &trans
-   &trans &trans &trans       &trans     &trans       &trans    &trans &kp F1 &kp F2  &kp F3  &kp F4  &trans
-                              &trans     &trans       &trans    &trans &trans &kp BSPC 
+   &none &none &kp C_VOL_DN &kp C_MUTE &kp C_VOL_DN &none     &none &kp F9 &kp F10 &kp F11 &kp F12 &none
+   &none &none &kp C_PREV   &kp C_PP   &kp C_NEXT   &none     &none &kp F5 &kp F6  &kp F7  &kp F8  &none
+   &none &none &none        &none      &none        &none     &none &kp F1 &kp F2  &kp F3  &kp F4  &none
+                            &none      &none        &none     &none &none &kp BSPC 
             >;
         };
 
         // 5
         mouse_keys_layer {
             bindings = <
-   &trans &trans      &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &trans      &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &bootloader &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-                             &trans &trans &trans    &trans &trans &trans
+   &none &none       &none &none &none &none     &none &none &none &none &none &none
+   &none &none       &none &none &none &none     &none &none &none &none &none &none
+   &none &bootloader &none &none &none &none     &none &none &none &none &none &none
+                           &none &none &none     &none &none &none
             >;
         };
 
         // 6
         dwm_layer {
             bindings = <
-   &trans &trans &dwm_send_nscreen &dwm_layout_bstack &dwm_layout_monocle   &dwm_layout_tile          &trans         &dwm_term    &trans       &dwm_run       &dwm_close    &trans
-   &trans &trans &trans            &trans             &trans                &dwm_focus_nscreen        &dwm_dec_msize &dwm_next    &dwm_prev    &dwm_inc_msize &dwm_swap     &trans
-   &trans &trans &trans            &trans             &dwm_dec_master_count &dwm_inc_master_count     &trans         &dwm_tag_one &dwm_tag_two &dwm_tag_three &dwm_tag_four &trans
-                                   &trans             &trans                &mo 7                     &trans         &trans       &trans
+   &none &none &dwm_send_nscreen &dwm_layout_bstack &dwm_layout_monocle   &dwm_layout_tile          &none          &dwm_term    &none        &dwm_run       &dwm_close    &none
+   &none &none &none             &none              &none                 &dwm_focus_nscreen        &dwm_dec_msize &dwm_next    &dwm_prev    &dwm_inc_msize &dwm_swap     &none
+   &none &none &none             &none              &dwm_dec_master_count &dwm_inc_master_count     &none          &dwm_tag_one &dwm_tag_two &dwm_tag_three &dwm_tag_four &none
+                                 &none              &none                 &mo 7                     &none          &none        &none
             >;
         };
 
         // 7
         dwm_alt_layer {
             bindings = <
-   &trans &dwm_quit &trans &trans &trans &trans    &trans &trans          &trans          &trans            &trans           &trans
-   &trans &trans    &trans &trans &trans &trans    &trans &trans          &trans          &trans            &trans           &trans
-   &trans &trans    &trans &trans &trans &trans    &trans &dwm_to_tag_one &dwm_to_tag_two &dwm_to_tag_three &dwm_to_tag_four &trans
-                           &trans &trans &trans    &trans &trans          &trans
+   &none &dwm_quit &none &none &none &none     &none &none           &none           &none             &none            &none
+   &none &none     &none &none &none &none     &none &none           &none           &none             &none            &none
+   &none &none     &none &none &none &none     &none &dwm_to_tag_one &dwm_to_tag_two &dwm_to_tag_three &dwm_to_tag_four &none
+                         &none &none &none     &none &none           &none
+            >;
+        };
+
+        // 8
+        tmux_layer {
+            bindings = <
+   &none &none &none &none &none &none         &tmux_resize_left  &tmux_resize_down  &tmux_resize_up &tmux_resize_right &tmux_split_v &none
+   &none &none &none &none &none &none         &tmux_pane_left    &tmux_pane_down    &tmux_pane_up   &tmux_pane_right   &tmux_split_h &none
+   &none &none &none &none &none &none         &none              &tmux_prev_win     &tmux_next_win  &none &tmux_select &none
+                     &none &none &tmux_new     &tmux_session_list &tmux_sessionnizer &none
             >;
         };
 
         empty_layer {
             bindings = <
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-                        &trans &trans &trans    &trans &trans &trans
+   &none &none &none &none &none &none     &none &none &none &none &none &none
+   &none &none &none &none &none &none     &none &none &none &none &none &none
+   &none &none &none &none &none &none     &none &none &none &none &none &none
+                     &none &none &none     &none &none &none
             >;
         };
     };
