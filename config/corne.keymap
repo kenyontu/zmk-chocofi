@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "keys_pt_abnt2.h"
+#include "keys_us_international.h"
 
 / {
     macros {
@@ -527,7 +527,7 @@
             bindings = <
    &none &theway_edit &kp TILDE &kp LBKT &kp RBKT &kp CARET     &kp UNDER &kp LT   &kp SLASH &kp GT  &kp DEL          &none
    &none &theway_del  &kp GRAVE &kp LPAR &kp RPAR &kp DLLR      &kp EQUAL &kp LBRC &kp RBRC  &kp SQT &kp DQT          &none
-   &none &kp LGUI     &kp EXCL  &kp AT   &kp HASH &kp PRCNT     &kp AMPS  &kp BSLH &kp PIPE  &none   &kp PT_C_CEDILLA &none
+   &none &kp LGUI     &kp EXCL  &kp AT   &kp HASH &kp PRCNT     &kp AMPS  &kp BSLH &kp PIPE  &none   &kp EN_C_CEDILLA &none
                                 &none    &mo 4    &kp SPACE     &none     &none    &kp BSPC 
             >;
         };
