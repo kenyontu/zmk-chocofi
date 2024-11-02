@@ -10,6 +10,10 @@
 #include <dt-bindings/zmk/outputs.h>
 #include "keys_us_international.h"
 
+&mt {
+    tapping-term-ms = <400>;
+};
+
 / {
     macros {
         dwm_term: dwm_term {
@@ -104,6 +108,46 @@
                     ;
         };
 
+        dwm_tag_five: dwm_tag_five {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                    , <&macro_tap &kp N5>
+                    , <&macro_release &kp LALT>
+                    ;
+        };
+
+        dwm_tag_six: dwm_tag_six {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                    , <&macro_tap &kp N6>
+                    , <&macro_release &kp LALT>
+                    ;
+        };
+
+        dwm_tag_seven: dwm_tag_seven {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                    , <&macro_tap &kp N7>
+                    , <&macro_release &kp LALT>
+                    ;
+        };
+
+        dwm_tag_eight: dwm_tag_eight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                    , <&macro_tap &kp N8>
+                    , <&macro_release &kp LALT>
+                    ;
+        };
+
         dwm_to_tag_one: dwm_to_tag_one {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -147,6 +191,54 @@
                 = <&macro_press &kp LALT>
                     , <&macro_press &kp LSHFT>
                     , <&macro_tap &kp N4>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp LALT>
+                    ;
+        };
+
+        dwm_to_tag_five: dwm_to_tag_five {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                    , <&macro_press &kp LSHFT>
+                    , <&macro_tap &kp N5>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp LALT>
+                    ;
+        };
+
+        dwm_to_tag_six: dwm_to_tag_six {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                    , <&macro_press &kp LSHFT>
+                    , <&macro_tap &kp N6>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp LALT>
+                    ;
+        };
+
+        dwm_to_tag_seven: dwm_to_tag_seven {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                    , <&macro_press &kp LSHFT>
+                    , <&macro_tap &kp N7>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp LALT>
+                    ;
+        };
+
+        dwm_to_tag_eight: dwm_to_tag_eight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                    , <&macro_press &kp LSHFT>
+                    , <&macro_tap &kp N8>
                     , <&macro_release &kp LSHFT>
                     , <&macro_release &kp LALT>
                     ;
@@ -565,20 +657,20 @@
         // 6
         dwm_layer {
             bindings = <
-   &none &none &dwm_send_nscreen &dwm_layout_bstack &dwm_layout_monocle   &dwm_layout_tile          &none          &dwm_term    &none        &dwm_run       &dwm_close    &none
-   &none &none &none             &none              &none                 &dwm_focus_nscreen        &dwm_dec_msize &dwm_next    &dwm_prev    &dwm_inc_msize &dwm_swap     &none
-   &none &none &none             &none              &dwm_dec_master_count &dwm_inc_master_count     &none          &dwm_tag_one &dwm_tag_two &dwm_tag_three &dwm_tag_four &none
-                                 &none              &none                 &mo 7                     &none          &none        &none
+   &trans &trans &dwm_send_nscreen &dwm_layout_bstack &dwm_layout_monocle   &dwm_layout_tile          &trans    &dwm_term     &trans       &dwm_run       &dwm_close     &trans
+   &trans &trans &trans            &trans             &trans                &dwm_focus_nscreen        &dwm_swap &dwm_tag_one  &dwm_tag_two &dwm_tag_three &dwm_tag_four  &trans
+   &trans &trans &trans            &trans             &dwm_dec_master_count &dwm_inc_master_count     &trans    &dwm_tag_five &dwm_tag_six &dwm_tag_seven &dwm_tag_eight &trans
+                                   &trans             &trans                &mo 7                     &dwm_prev &dwm_next     &trans
             >;
         };
 
         // 7
         dwm_alt_layer {
             bindings = <
-   &none &dwm_quit &none &none &none &none     &none &none           &none           &none             &none            &none
-   &none &none     &none &none &none &none     &none &none           &none           &none             &none            &none
-   &none &none     &none &none &none &none     &none &dwm_to_tag_one &dwm_to_tag_two &dwm_to_tag_three &dwm_to_tag_four &none
-                         &none &none &none     &none &none           &none
+   &trans &dwm_quit &trans &trans &trans &trans    &trans &dwm_dec_msize   &dwm_inc_msize  &trans            &trans            &trans
+   &trans &trans    &trans &trans &trans &trans    &trans &dwm_to_tag_one  &dwm_to_tag_two &dwm_to_tag_three &dwm_to_tag_four  &trans
+   &trans &trans    &trans &trans &trans &trans    &trans &dwm_to_tag_five &dwm_to_tag_six &dwm_to_tag_seven &dwm_to_tag_eight &trans
+                           &trans &trans &trans    &trans &trans           &trans
             >;
         };
 
